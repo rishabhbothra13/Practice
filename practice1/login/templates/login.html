@@ -1,0 +1,13 @@
+<body style='background-color:#FFCCE6;'>
+<h1 style="text-align:center">Login Form :</h1>
+<form action="/login/" method="post" style="text-align:center">
+	 {% csrf_token %}
+	 {{form}}
+
+<input type="submit" value="Submit" />
+
+
+<br><br>
+ <a href="{% url 'signup'%}">New User?</a>
+<hr>
+</form>
